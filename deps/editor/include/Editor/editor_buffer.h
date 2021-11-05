@@ -15,7 +15,7 @@ public:
     void moveCursorHorizontal(int offset);
     void moveCursorToStart();
     void moveCursorToEnd();
-    void insertCharacters(char* buffer, int length);
+    void insertCharacters(const char* buffer, int length);
     void deleteCharacters(int count);
 private:
     unsigned int m_cursorPosition = 0;

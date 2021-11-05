@@ -72,7 +72,7 @@ void EditorBuffer::moveCursorToEnd()
     m_cursorPosition = m_data.size() - 1;
 }
 
-void EditorBuffer::insertCharacters(char* buffer, int length) 
+void EditorBuffer::insertCharacters(const char* buffer, int length) 
 {
     for (int i = 0; i < length; i++, m_cursorPosition++)
     {
