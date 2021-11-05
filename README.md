@@ -207,7 +207,7 @@ public:
     void moveCursorHorizontal(int offset);
     void moveCursorToStart();
     void moveCursorToEnd();
-    void insertCharacters(char* buffer, int length);
+    void insertCharacters(const char* buffer, int length);
     void deleteCharacters(int count);
 private:
     unsigned int m_cursorPosition = 0;
@@ -300,7 +300,7 @@ void EditorBuffer::moveCursorToEnd()
     m_cursorPosition = m_data.size() - 1;
 }
 
-void EditorBuffer::insertCharacters(char* buffer, int length) 
+void EditorBuffer::insertCharacters(const char* buffer, int length) 
 {
     for (int i = 0; i < length; i++, m_cursorPosition++)
     {
