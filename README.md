@@ -86,8 +86,8 @@ private:
 |moveCursorHorizontal|O(1)|O(1)|
 |moveCursorToStart|O(1)|O(1)|
 |moveCursorToEnd|O(1)|O(1)|
-|insertCharacters|O(n^2)|O(n^2)|
-|deleteCharacters|O(n)|O(n)|
+|insertCharacters|O(n)|O(n)|
+|deleteCharacters|O(n)|O(1)|
 
 
 ### Два стека
