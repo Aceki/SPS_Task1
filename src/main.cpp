@@ -1,8 +1,8 @@
-#include "Editor/editor_buffer.h"
-
 #include <string>
 #include <iostream>
 #include <cctype>
+
+#include "Editor/editor_buffer.h"
 
 using namespace std;
 
